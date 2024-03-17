@@ -4,7 +4,7 @@ FROM ${IMAGE_BASE}
 LABEL org.opencontainers.image.source https://github.com/kalazus/fooocus-sdwebui-ai-doc
 LABEL org.opencontainers.image.description "Automatic1111+Fooocus Web UI"
 
-COPY ./COPY_ROOT/ /
+COPY --chown=0:1111 ./COPY_ROOT/ /
 RUN set -eo pipefail && /opt/ai-dock/bin/build/layer2/init.sh | tee -a /var/log/build.log
 
 CMD ["init.sh"]
