@@ -1,4 +1,4 @@
-#!/bin/false
+#!/bin/bash
 
 source /opt/ai-dock/etc/environment.sh
 fooocus_git="https://github.com/lllyasviel/Fooocus"
