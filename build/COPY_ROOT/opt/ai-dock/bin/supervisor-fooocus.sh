@@ -5,6 +5,7 @@ trap cleanup EXIT
 LISTEN_PORT=${FOOOCUS_PORT_LOCAL:-17870}
 METRICS_PORT=${FOOOCUS_METRICS_PORT:-27870}
 PROXY_SECURE=true
+QUICKTUNNELS=true
 
 function cleanup() {
     kill $(jobs -p) > /dev/null 2>&1
