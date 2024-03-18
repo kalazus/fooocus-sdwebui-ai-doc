@@ -2,8 +2,8 @@
 
 trap cleanup EXIT
 
-LISTEN_PORT=${FOOOCUS_PORT_LOCAL:-17860}
-METRICS_PORT=${FOOOCUS_METRICS_PORT:-27860}
+LISTEN_PORT=${FOOOCUS_PORT_LOCAL:-17870}
+METRICS_PORT=${FOOOCUS_METRICS_PORT:-27870}
 PROXY_SECURE=true
 
 function cleanup() {
@@ -13,7 +13,7 @@ function cleanup() {
 
 function start() {
     if [[ ! -v FOOOCUS_PORT || -z $FOOOCUS_PORT ]]; then
-        FOOOCUS_PORT=${FOOOCUS_PORT_HOST:-7860}
+        FOOOCUS_PORT=${FOOOCUS_PORT_HOST:-7870}
     fi
     PROXY_PORT=$FOOOCUS_PORT
     SERVICE_NAME="Fooocus Web UI"
