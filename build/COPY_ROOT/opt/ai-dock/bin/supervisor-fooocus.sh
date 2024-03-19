@@ -62,7 +62,7 @@ function start() {
     printf "Starting %s...\n" "${SERVICE_NAME}"
     
     cd /opt/Fooocus &&
-    exec micromamba run -n webui -e python launch.py \
+    exec micromamba run -n webui python launch.py \
         ${FLAGS_COMBINED} --port ${LISTEN_PORT}
 }
 
