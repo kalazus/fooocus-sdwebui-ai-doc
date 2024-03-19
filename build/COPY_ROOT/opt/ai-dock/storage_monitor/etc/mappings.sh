@@ -3,7 +3,7 @@
 declare -A storage_map
 
 webui_models="/opt/stable-diffusion-webui/models/"
-fooocus_models="opt/Fooocus/models/"
+fooocus_models="/opt/Fooocus/models/"
 
 storage_map["stable_diffusion/models/ckpt"]="${webui_models}Stable-diffusion ${fooocus_models}checkpoints"
 storage_map["stable_diffusion/models/codeformer"]="${webui_models}Codeformer"
